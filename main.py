@@ -129,4 +129,4 @@ async def on_message(message):
                 await client.send_message(message.channel, "Oeps, het lijkt er op dat er iets fout is gegaan bij het opgeven van dit commando!")
 
 if __name__ == "__main__":
-    client.run("NDk1Mjc1MDEyMDk4NjIxNDQw.DwpBGw.0n74VZt8F7-A7HjOIcsw9aiI5uw")
+    client.run("")
