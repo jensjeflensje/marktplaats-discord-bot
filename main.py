@@ -7,7 +7,7 @@ import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from discord import NotFound
-from config import marktplaats_channel_id, server_name, prefix, help_text
+from config import marktplaats_channel_id, server_name, prefix, help_text, token
 
 client = discord.Client()
 
@@ -129,4 +129,4 @@ async def on_message(message):
                 await client.send_message(message.channel, "Oeps, het lijkt er op dat er iets fout is gegaan bij het opgeven van dit commando!")
 
 if __name__ == "__main__":
-    client.run("")
+    client.run(token)
